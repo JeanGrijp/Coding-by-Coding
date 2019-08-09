@@ -6,12 +6,18 @@ def spliter(message):
 
 
 def cesar(number, message):
-    letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     string = ''
     list1 = spliter(message)
+    print(list1)
     if number > 0 and number < 27:
         for i in list1:
-            string += letters[letters.index(letters[i]) + letters[number]]
+            if i == "é":
+                string += letters[letters.index(letters["e"]) + number]
+            elif i == "í":
+                pass
+            elif i == "à":
+                string += letters[letters.index(letters[i]) + number]
     else:
         return None
     return string
