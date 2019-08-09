@@ -1,9 +1,17 @@
+def spliter(message):
+    list1 = []
+    for i in message:
+        list1.append(i)
+    return list1
+
+
 def cesar(number, message):
     letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     string = ''
+    list1 = spliter(message)
     if number > 0 and number < 27:
-        for i in range(len(message)):
-            string += letters[letters.index(letters[i]) + number]
+        for i in list1:
+            string += letters[letters.index(letters[i]) + letters[number]]
     else:
         return None
     return string
