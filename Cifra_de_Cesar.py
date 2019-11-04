@@ -11,6 +11,8 @@ def spliter(message):
 def cesar(number, message):
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     lettersUp = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    nuns = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    
     if number > 26: # Verifica se o número da chave é maior que a quantidade de letras do alfabeto
         number = number%26 # o número passa a ser congruente ao número original em módulo 26
     string = ''
@@ -33,6 +35,12 @@ def cesar(number, message):
                 string += letters[letters.index(i) + number]
             elif ord(i) >= 65 and ord(i) <= 90: # faz a verificação se a letra é maiúscula
                 string += lettersUp[lettersUp.index(i) + number]
+            elif ord(i) >= 48 and ord(i) <= 57:
+                if number >= 0 and number <= 9:
+                    string += nuns[nuns.index(i) + number]
+                else:
+                    aux = number%10
+                    string += nuns[nuns.index(i) + aux]
             elif i in dic: # Verifica se i é um caractér especial. 
                 string += dic[i]
             else:
@@ -41,9 +49,11 @@ def cesar(number, message):
         return None
     return string
 
+
 def descersar(number, message):
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     lettersUp = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    nuns = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
     if number > 26: # Verifica se o número da chave é maior que a quantidade de letras do alfabeto
         number = number%26 # o número passa a ser congruente ao número original em módulo 26
     string = ''
@@ -54,14 +64,21 @@ def descersar(number, message):
                 string += letters[letters.index(i) - number]
             elif ord(i) >= 65 and ord(i) <= 90: # faz a verificação se a letra é maiúscula
                 string += lettersUp[lettersUp.index(i) - number]
+            elif ord(i) >= 48 and ord(i) <= 57:
+                if number >= 0 and number <= 9:
+                    string += nuns[nuns.index(i) - number]
+                else:
+                    aux = number%10
+                    string += nuns[nuns.index(i) - aux]
             else:
                 string += i
     else:
         return None
     return string
 
+
 num = 5
-text = "Família de endereços, uma tupla de quatro tuplas é usada, onde flowinfo e scopeid representam os membros e em C. Para métodos de módulo, flowinfo e scopeid podem ser omitidos apenas para compatibilidade com versões anteriores. Observe, no entanto, que a omissão do scopeid pode causar problemas na manipulação de endereços IPv6 com escopo definido"
+text = "ASCII — geralmente pronunciado — é um código binário que codifica um conjunto de 128 sinais: 95 sinais gráficos e 33 sinais de controle, utilizando portanto apenas 7 bits para representar todos os seus símbolos."
 mais = cesar(num, text)
 print(mais)
 print(descersar(num, mais))
