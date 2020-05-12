@@ -1,19 +1,39 @@
-const gel = (element) => document.querySelector(element)
-const ball = gel(".ball")
-const container = gel(".container")
+const gel = (element) => document.querySelector(element);
 
-const max = +getComputedStyle(container).width.split("px").join("")
+const ball = gel('.ball');
+const container = gel('.container');
 
-let speedY = 80
-let speedX = 90
-setInterval(()=>{
-    let positionX = getComputedStyle(ball).left.split("px").join("")
-    if (positionX > max
-        || positionX < 0) {
-        speedX *= -1
-    }
-    let aux = +ball.style.left.split("px").join("")
-    ball.style.left = `${aux+speedX}px`
+const convert = (text) => +text.split('px').join('');
 
-    
-}, 100)
+const screenWidth = document.body.offsetWidth;
+const screenHeight = convert(getComputedStyle(container).height);
+const ballWidth = convert(getComputedStyle(ball).width);
+
+let positionX = 0;
+let speedX = 10;
+
+let positionY = 0;
+let speedY = 8;
+
+setInterval(() => {
+  positionX += speedX;
+  positionY += speedY;
+
+  if (
+    positionX >= screenWidth - ballWidth
+    || positionX <= 0
+  ) {
+    speedX *= -1;
+  }
+  
+  if (
+    positionY >= screenHeight - ballWidth
+    || positionY <= 0
+  ) {
+    speedY *= -1;
+  }
+
+  ball.style.left = `${positionX}px`;
+  ball.style.top = `${positionY}px`;
+}, 1);
+
