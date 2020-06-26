@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+    background-image: url("Jean.jpg");
     margin: 0;
     background-color:#0b0b0b;
     font-family: 'Ubuntu', sans-serif;
