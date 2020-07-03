@@ -24,6 +24,12 @@ html, body {
     align-items: center;
 }
 
+.textContainerTitle{
+    width: 100%;
+    height: 20vh;
+    border: 1px solid red;
+}
+
 .gameSpace {
     display: grid;
     grid-template-columns: 30% 30% 30%;

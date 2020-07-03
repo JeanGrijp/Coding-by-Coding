@@ -38,5 +38,3 @@ const verificaVitoria = (game) => {
     return true
   }
 }
-
-verificaVitoria(game)
