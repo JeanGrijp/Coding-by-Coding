@@ -25,7 +25,6 @@ html, body {
 }
 
 .gameSpace {
-    border: 1px solid rgb(127, 136, 163);
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 30% 30% 30%;

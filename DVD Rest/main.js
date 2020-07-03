@@ -9,7 +9,6 @@ const convert = (text) => +text.split('px').join('');
 const screenWidth = document.body.offsetWidth;
 const screenHeight = convert(getComputedStyle(container).height);
 const ballWidth = convert(getComputedStyle(ball).width);
-
 let positionX = 0;
 let speedX = 1;
 let positionY = 0;
