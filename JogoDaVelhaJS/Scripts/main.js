@@ -6,3 +6,4 @@ const game = [
   ['o', 'o', 'x'],
 ];
 
+console.log(functions)

@@ -1,0 +1,17 @@
+#instalação do babel
+
+npm install --save-dev @babel/cli @babel/preset-env @babel/core
+
+
+#conversão do JS moderno para o JS antigo.
+
+npx babel codigoAtual.js -o codigoNovo.js --presets=@babel/env
+
+
+#script para o JSON
+
+babel ./codigoAtual.js -o ./codigoNovo.js --presets=@babel/env -w
+
+#instalando o babel para com o webpack
+
+npm install --save-dev @babel/cli @babel/preset-env @babel/core babel-loader webpack webpack-cli regenerator-runtime core-js@2

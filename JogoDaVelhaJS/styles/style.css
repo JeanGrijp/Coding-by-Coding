@@ -29,7 +29,6 @@ html, body {
     height: 5vh;
     border: 1px solid red;
     color: aliceblue ;
-    padding: auto;
 }
 
 .gameSpace {
