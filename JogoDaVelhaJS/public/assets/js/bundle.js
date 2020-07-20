@@ -86,81 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/functions.js":
-/*!**************************!*\
-  !*** ./src/functions.js ***!
-  \**************************/
-/*! exports provided: verificaVitoria */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "verificaVitoria", function() { return verificaVitoria; });
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var nome = "Jean";
-var verificaVitoria = function verificaVitoria(game) {
-  var playRows = [];
-  var playColumns = [];
-
-  for (var i = 0; i < 3; i += 1) {
-    for (var j = 0; j < 3; j += 1) {
-      playRows.push(game[i][j]);
-      playColumns.push(game[j][i]);
-    }
-
-    var _playRows = playRows,
-        _playRows2 = _slicedToArray(_playRows, 3),
-        r1 = _playRows2[0],
-        r2 = _playRows2[1],
-        r3 = _playRows2[2];
-
-    var _playColumns = playColumns,
-        _playColumns2 = _slicedToArray(_playColumns, 3),
-        c1 = _playColumns2[0],
-        c2 = _playColumns2[1],
-        c3 = _playColumns2[2];
-
-    if (r1 === r2 && r1 === r3 || c1 === c2 && c2 === c3) {
-      console.log("chegou");
-      return true;
-    }
-
-    playRows = [];
-    playColumns = [];
-  }
-
-  if (game[0][0] === game[1][1] && game[1][1] === game[2][2] || game[2][0] === game[1][1] && game[1][1] === game[0][2]) {
-    console.log("chegou");
-    return true;
-  }
-};
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ "./src/functions.js");
-
-var game = [['o', 'x', 'o'], ['x', 'o', 'o'], ['o', 'o', 'x']];
-console.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__["verificaVitoria"])(game));
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Jean\\Documents\\Scripts\\Code\\Coding-by-Coding\\JogoDaVelhaJS\\src\\index.js'");
 
 /***/ })
 
