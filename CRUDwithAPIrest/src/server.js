@@ -1,10 +1,10 @@
 require('dotenv').config()
 const express = require('express')
 const server = express()
-server.use(express.json())
 const mongoose = require('mongoose')
 const routes = require('./routes')
 
+server.use(express.json())
 
 mongoose.connect(process.env.DB_STRING, {
     useNewUrlParser: true,
