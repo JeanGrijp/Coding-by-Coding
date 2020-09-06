@@ -10,12 +10,15 @@ module.exports = {
         // return res.json(user)
     },
 
-    async store(req, res){
-        const {name, cpf, data} = req.body
-        let user = await User.findOne({name})
-        if (!user){
-            user = await User.create({name, cpf, data})
-        }
-        return res.json(user)
+    store(req, res){
+        return res.json(req.body)
+        // const {name} = req.body
+        // const {cpf} = req.body
+        // const {data} = req.body
+        // let user = await User.findOne({name})
+        // if (!user){
+        //     user = await User.create({name, cpf, data})
+        // }
+        // return res.json(user)
     }
 }

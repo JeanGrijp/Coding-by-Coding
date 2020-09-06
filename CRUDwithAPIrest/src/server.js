@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const server = express()
+server.use(express.json())
 const mongoose = require('mongoose')
 const routes = require('./routes')
 
@@ -15,8 +16,7 @@ mongoose.connect(process.env.DB_STRING, {
     console.log(e)
 })
 
-
-server.use(express.json())
+server.use(routes)
 server.use(express.urlencoded({extended : true}))
 
 
