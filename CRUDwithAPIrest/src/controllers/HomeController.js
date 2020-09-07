@@ -25,6 +25,9 @@ module.exports = {
 
     async update(req, res) {
         const {name, cpf, data} = req.body
-
+        let user = await User.findOne({name})
+        if (user){
+            user = User.updateOne()
+        }
     }
 }
