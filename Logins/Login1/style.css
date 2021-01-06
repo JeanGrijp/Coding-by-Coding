@@ -1,0 +1,143 @@
+:root {
+    --color-background: #0B2161;
+    --color-primary: #0A122A;
+    --color-secundary: #04D361;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    font-family: 'Fira Code', monospace;
+    font-size: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    background: url('./Pin.gif');
+    background-size: cover;
+    /* background: linear-gradient(to bottom, rgba(8,37,126,0.59) 0%, rgba(39,50,152,0.59) 25%, rgba(113,80,215,1) 86%, rgba(130,87,229,1) 100%); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08257e', endColorstr='#8257e5', GradientType=0 ); */
+}
+
+body {
+    position: relative;
+    /* background: var(--color-background); */
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: block;
+    position: absolute;
+    /* border: 1px solid var(--color-secundary); */
+    width: 50%;
+    max-width: 450px;
+    min-width: 250px;
+    height: 50%;
+    text-align: center;
+    background: var(--color-background);
+    border-radius: 20px;
+    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    opacity: 0.8;
+    transition: 1s;
+
+}
+
+form:hover {
+    display: block;
+    position: absolute;
+    width: 50%;
+    max-width: 450px;
+    min-width: 250px;
+    height: 50%;
+    text-align: center;
+    background: var(--color-primary);
+    border-radius: 20px;
+    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    opacity: 5;
+    transition: 1s;
+
+}
+
+form h1{
+    color: var(--color-title-in-primary);
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 240%;
+}
+
+input[type="email"], input[type="password"]{
+    color: #FFFFFF;
+    text-align: unset;
+    outline: none;
+    display: block;
+    margin: 25px auto;
+    width: 200px;
+    height: 30px;
+    background: none;
+    border: 1px solid var(--color-secundary);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+input[type="email"]:focus, input[type="password"]:focus{
+    color: #FFFFFF;
+    /* text-align: center; */
+    outline: none;
+    display: block;
+    margin: 25px auto;
+    width: 250px;
+    height: 30px;
+    background: var(--color-primary);
+    border: 1px solid var(--color-title-in-primary);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="button"]{
+    color: #FFFFFF;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 80px 5px;
+    width: 100px;
+    height: 30px;
+    background: none;
+    border: 1px solid var(--color-secundary);
+    border-radius: 8px;
+    transition: 1s;
+}
+
+input[type="button"]:hover{
+    color: black;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 80px 5px;
+    width: 100px;
+    height: 30px;
+    background: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
