@@ -1,0 +1,16 @@
+:root {
+    --color-background: #2d142c;
+    --color-background-2: #510a32;
+    --color-background-3: #801336;
+    --color-background-4: #c72c41;
+    --color-background-5: #ee4540;
+    --color-title: #F6D8CE;
+    --color-subTitle: #F8E6E0;
+}
+
+
+html, body {
+    background: var(--color-background);
+    width: 100%;
+    height: 100vh;
+}

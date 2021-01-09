@@ -1,7 +1,15 @@
 :root {
-    --color-background: #0A0A2A;
-    --color-background-2: #0B0B61;
-    --color-background-second: #08298A;
-    --color-titles: #CED8F6;
-    --color-titles-2: #A9BCF5;
+    --color-background: #2d142c;
+    --color-background-2: #510a32;
+    --color-background-3: #801336;
+    --color-background-4: #c72c41;
+    --color-background-5: #ee4540;
+    --color-title: #F6D8CE;
+    --color-subTitle: #F8E6E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
