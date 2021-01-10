@@ -8,6 +8,11 @@
     --color-subTitle: #F8E6E0;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html, body {
     background: var(--color-background);
@@ -44,9 +49,19 @@ div.container nav div.up{
     top: 0%;
     position: absolute;
     border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
-div.container nav a {
-    position: absolute;
+div.container nav div.up a {
+    /* position: absolute; */
+    /* display: inline-block; */
+    margin-top: 10%;
     text-decoration: none;
+    color: var(--color-title);
+    transform: rotate(270deg);
+
 }
