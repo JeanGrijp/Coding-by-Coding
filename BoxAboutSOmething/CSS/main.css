@@ -15,3 +15,102 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+@keyframes middleDivsMiddle-animation {
+    0% {
+        border: 3px solid red;
+        background-color: red;
+        position: absolute;
+        width: 25%;
+        left: 0%;
+    }
+    25% {
+        border: 1px solid red;
+        background-color: red;
+        position: absolute;
+        width: 60%;
+        left: 25%;
+    }
+    50% {
+        border: 4px solid red;
+        background-color: red;
+        position: absolute;
+        width: 25%;
+        left: 75%;
+    }
+    75% {
+        border: 1px solid red;
+        background-color: red;
+        position: absolute;
+        width: 60%;
+        left: 25%;
+    }
+    100% {
+        border: 5px solid red;
+        background-color: red;
+        position: absolute;
+        width: 25%;
+        left: 0%;
+    }
+}
+
+
+
+@keyframes h1-animation {
+    0% {
+        position: absolute;
+        margin: 5%;
+        color: var(#2E2E2E);
+        text-align: center;
+        font-size: 800%;
+
+        /* #2E2E2E */
+    }
+    25% {
+        position: absolute;
+        margin: 5%;
+        color: #424242;
+        text-align: center;
+        font-size: 800%;
+
+    }
+    50% {
+        position: absolute;
+        margin: 5%;
+        color: #fff;
+        text-align: center;
+        font-size: 800%;
+        transform: rotate(0deg);
+    }
+    65% {
+        position: absolute;
+        margin: 5%;
+        color: #424242;
+        text-align: center;
+        font-size: 800%;
+        transform: rotate(5deg);
+    }
+    69% {
+        position: absolute;
+        margin: 5%;
+        color: #424242;
+        text-align: center;
+        font-size: 800%;
+        transform: rotate(0deg);
+    }
+    75% {
+        position: absolute;
+        margin: 5%;
+        color: #2e2e2e;
+        text-align: center;
+        font-size: 800%;
+    }
+    100% {
+        position: absolute;
+        margin: 5%;
+        color: var(--color-background-2);
+        text-align: center;
+        font-size: 800%;
+    }
+}
