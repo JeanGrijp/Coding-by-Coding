@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-2);
 }
 
 html, body {
@@ -26,7 +27,7 @@ html, body {
 }
 
 div.container {
-    position: absolute;
+    position: relative;
     width: 80%;
     height: 90vh;
     background-color: var(--color-background);
@@ -39,14 +40,20 @@ div.minContainer {
     position: relative;
     width: 10%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    box-shadow: 10px 0px 20px -3px rgba(0,0,0,0.75);
 }
 
 div.minContainer div.up {
     position: absolute;
     border-radius: 5px;
     height: 50%;
-    width: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 div.minContainer div.up nav {
@@ -60,6 +67,7 @@ div.minContainer div.up nav {
     flex-direction: column;
     text-align: center;
     align-content: center;
+    font-size: 80%;
 }
 
 div.minContainer div.up nav a{
@@ -96,25 +104,6 @@ div.minContainer div.up nav a:hover{
     margin-bottom: 50%;
     border-left: 2px solid red;
     border-right: 2px solid red;
-}
-
-div.minContainer div.up nav a:visited{
-    text-decoration: none;
-    color: var(--color-subTitle);
-    /* border: 1px solid yellow; */
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    /* align-content: center; */
-    text-align: center;
-    font-family: var(--font-1);
-    margin-bottom: 50%;
-    background: var(--color-background);
-    /* border-left: 2px solid red; */
-    /* border-right: 2px solid red; */
 }
 
 div.minContainer div.up nav img{

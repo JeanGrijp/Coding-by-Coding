@@ -12,17 +12,14 @@
 }
 
 div.middle {
-    /* border: 1px solid red; */
     position: absolute;
     width: 55%;
     height: 100%;
     top: 0;
     left: 10%;
-    font-family: var(--font-2);
 }
 
 div.middle div.aboveAll {
-   /* border: 1px solid red; */
    height: 50%;
    position: relative;
    display: flex;
@@ -33,7 +30,6 @@ div.middle div.aboveAll {
 div.middle div.aboveAll div {
     width: 80%;
     height: 80%;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +38,6 @@ div.middle div.aboveAll div {
 }
 
 div.middle div.aboveAll div h1 {
-    /* margin: 5%; */
     color: var(--color-background-2);
     text-align: center;
     font-size: 1000%;
@@ -56,7 +51,6 @@ div.middle div.aboveAll div p {
 }
 
 div.middle div.bellowAll {
-    /* border: 1px solid red; */
     height: 50%;
     position: relative;
     display: flex;
@@ -65,9 +59,9 @@ div.middle div.bellowAll {
 }
 
 div.middle div.bellowAll div {
+    position: absolute;
     width: 80%;
     height: 80%;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +69,7 @@ div.middle div.bellowAll div {
 }
 
 div.middle div.bellowAll div h1 {
+    position: absolute;
     margin: 5%;
     color: var(--color-background-2);
     text-align: center;
@@ -83,9 +78,11 @@ div.middle div.bellowAll div h1 {
 }
 
 div.middle div.bellowAll div p {
+    position: absolute;
     color: var(--color-title);
     font-weight: 800;
     text-align: center;
+    top: 8%;
 }
 
 div.middleDivsMiddle {

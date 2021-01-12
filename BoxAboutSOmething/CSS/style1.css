@@ -3,7 +3,7 @@ div.down {
     border-radius: 5px;
     top: 50%;
     height: 50%;
-    width: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
