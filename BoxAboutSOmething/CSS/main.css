@@ -1,11 +1,13 @@
 :root {
-    --color-background: #2d142c;
-    --color-background-2: #510a32;
+    --color-background: #151515;
+    --color-background-2: #1C1C1C;
     --color-background-3: #801336;
     --color-background-4: #c72c41;
     --color-background-5: #ee4540;
-    --color-title: #F6D8CE;
-    --color-subTitle: #F8E6E0;
+    --color-title: #FFFFFF;
+    --color-subTitle: #F2F2F2;
+    --font-1: 'B612', sans-serif;
+    --font-2: 'Roboto', sans-serif;
 }
 
 * {

@@ -1,0 +1,27 @@
+div.down {
+    position: relative;
+    border-radius: 5px;
+    top: 50%;
+    height: 50%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.down a {
+    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+div.down a img{
+    width: 40%;
+    height: 50%;
+    /* position: absolute; */
+}
