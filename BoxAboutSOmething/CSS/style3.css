@@ -1,0 +1,84 @@
+div.sideRightContainer {
+    width: 35%;
+    height: 100%;
+    left: 65%;
+    top: 0px;
+    /* border: 1px solid white; */
+    position: absolute;
+}
+
+div.sideRightContainer div img {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 5%;
+    right: 5%;
+
+}
+
+div.sideRightContainer div.hello {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 20%;
+    top: 25%;
+    /* border: 1px solid green; */
+}
+
+div.sideRightContainer div.hello h1, div.sideRightContainer div.hello h1 p{
+    font-size: 80px;
+    display: inline;
+}
+
+div.sideRightContainer div.hello h1 {
+    color: var(--color-title);
+}
+
+div.sideRightContainer div.hello h1 p {
+    color: var(--color-text-alternative);
+}
+
+div.sideRightContainer div.box {
+    width: 25%;
+    height: 3%;
+    top: 45%;
+    position: absolute;
+    background: var(--color-background-2);
+}
+
+div.sideRightContainer div.textFinal {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 50%;
+}
+
+div.sideRightContainer div.textFinal p {
+    color: var(--color-title);
+    font-size: 200%;
+    position: absolute;
+}
+
+div.sideRightContainer div.final {
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 60%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sideRightContainer div input {
+    width: 30%;
+    height: 20%;
+    color: var(--color-subTitle);
+    position: absolute;
+    border-radius: 35px 35px 35px 35px;
+    border: 0;
+    background: var(--color-text-alternative);
+}

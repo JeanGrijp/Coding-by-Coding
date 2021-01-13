@@ -6,8 +6,10 @@
     --color-background-5: #ee4540;
     --color-title: #FFFFFF;
     --color-subTitle: #F2F2F2;
+    --color-text-alternative: #DF0101;
     --font-1: 'B612', sans-serif;
     --font-2: 'Roboto', sans-serif;
+    --font-3: 'Montserrat', sans-serif;
 }
 
 * {
@@ -81,7 +83,7 @@
         color: #fff;
         text-align: center;
         font-size: 800%;
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
     }
     65% {
         position: absolute;
@@ -89,7 +91,7 @@
         color: #424242;
         text-align: center;
         font-size: 800%;
-        transform: rotate(5deg);
+        /* transform: rotate(5deg); */
     }
     69% {
         position: absolute;
@@ -97,7 +99,7 @@
         color: #424242;
         text-align: center;
         font-size: 800%;
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
     }
     75% {
         position: absolute;

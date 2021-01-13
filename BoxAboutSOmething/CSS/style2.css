@@ -1,15 +1,4 @@
-:root {
-    --color-background: #151515;
-    --color-background-2: #1C1C1C;
-    --color-background-3: #801336;
-    --color-background-4: #c72c41;
-    --color-background-5: #ee4540;
-    --color-title: #FFFFFF;
-    --color-subTitle: #F2F2F2;
-    --color-text-alternative: #DF0101;
-    --font-1: 'B612', sans-serif;
-    --font-2: 'Roboto', sans-serif;
-}
+
 
 div.middle {
     position: absolute;
@@ -75,7 +64,7 @@ div.middle div.bellowAll div h1 {
     color: var(--color-background-2);
     text-align: center;
     font-size: 800%;
-    animation: h1-animation 20s linear infinite;
+    /* animation: h1-animation 20s linear infinite; */
     /* border: 1px solid red; */
 }
 
@@ -93,14 +82,6 @@ div.middleDivsMiddle {
     width: 60%;
     left: 25%;
     transition: 0.5s;
-    animation: middleDivsMiddle-animation 5s linear infinite;
+    /* animation: middleDivsMiddle-animation 5s linear infinite; */
 }
 
-div.sideRightContainer {
-    width: 35%;
-    height: 100%;
-    left: 65%;
-    top: 0px;
-    /* border: 1px solid white; */
-    position: absolute;
-}
